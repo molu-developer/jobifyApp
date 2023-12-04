@@ -8,11 +8,12 @@ import {
     updateJob, 
     deleteJob
 } from '../controllers/jobControllers.js';
+import { validateJobInput, validIdParam } from '../middleware/validationMiddleware.js';
 
 // router.get('/', getAllJobs)
 // router.post('/', createJob)
 
-router.route('/').get(getAllJobs).post(createJob);
-router.route('/:id').get(getJob).patch(updateJob).delete(deleteJob);
+router.route('/').get(getAllJobs).post(validateJobInput, createJob);
+router.route('/:id').get(validIdParam, getJob).patch(validateJobInput, validIdParam, updateJob).delete(validIdParam, deleteJob);
 
 export default router;

@@ -6,6 +6,7 @@ const app = express()
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 
+
 //routers
 import jobRouter from './routes/jobRouter.js'
 
