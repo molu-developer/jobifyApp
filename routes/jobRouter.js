@@ -7,7 +7,7 @@ import {
     createJob, 
     updateJob, 
     deleteJob
-} from '../controllers/jobControllers.js';
+} from '../controllers/jobController.js';
 import { validateJobInput, validIdParam } from '../middleware/validationMiddleware.js';
 
 // router.get('/', getAllJobs)
