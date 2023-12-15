@@ -5,6 +5,7 @@ import Logo from './Logo';
 import { useDashboardContext } from '../pages/DashBoardLayout';
 
 const BigSidebar = () => {
+  console.log('hola');
   const { showSidebar } = useDashboardContext();
 
   return (
