@@ -5,6 +5,10 @@ import Logo from './Logo';
 import { useDashboardContext } from '../pages/DashBoardLayout';
 
 const BigSidebar = () => {
+<<<<<<< HEAD
+=======
+  console.log('hola');
+>>>>>>> ba2b357166e3ca32369e66ec9fef34a757a0d239
   const { showSidebar } = useDashboardContext();
 
   return (
