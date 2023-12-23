@@ -15,7 +15,7 @@ import {
 
 import { action as registerAction } from './pages/Register.jsx';
 import { action as loginAction } from './pages/Login.jsx';
-import { loader as dashboardLoader } from './pages/DashBoardLayout.jsx';
+import { loader as dashboardLoader } from './pages/DashboardLayout.jsx';
 console.log('hello"');
 
 export const checkDefaultTheme = () => {
